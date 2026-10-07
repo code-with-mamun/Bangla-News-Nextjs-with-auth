@@ -8,7 +8,8 @@ const Header = () => {
   console.log(date);
 
   return (
-    <div className="flex gap-50   max-w-5xl mx-auto ">
+   <header  className="mx-auto my-2">
+   <div className="flex gap-50   max-w-5xl mx-auto ">
       <div className="flex justify-between items-center">
         <Image
           className="w-10 h-10"
@@ -18,15 +19,16 @@ const Header = () => {
           alt="logo"
         ></Image>
         <div>
-          <div>Bangla News 24</div>
-          <div>{date}</div>
+          <div className="mt-1.5">Bangla News 24</div>
+          <div className="ml-1">{date}</div>
         </div>
       </div>
-      <div className="flex gap-2.5">
+      <div className="flex gap-2.5 mt-1.5">
         <button className="btn ">সাইন ইন</button>
         <button className="btn btn-error">সাইন আপ</button>
       </div>
     </div>
+    </header>
   );
 };
 
